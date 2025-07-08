@@ -3,7 +3,14 @@ name = "pkit"
 version = "0.1.0"
 description = "A simple CLI tool to snapshot, track, and scan installed Python packages."
 authors = [{ name = "ReRa0", email = "adamkimkh@gmail.com" }]
-dependencies = []
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+dependencies = ["requests"]
 
 [project.scripts]
 pkit = "pkit.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
